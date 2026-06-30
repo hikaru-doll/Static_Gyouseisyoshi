@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* ---------------------
+共通スタイル
+-----------------------*/
+.contact {
+  background-color: var(--color-accent);
+  padding: var(--space-xxs);
+  text-align: center;
+  position: relative;
+  transition: 0.4s;
+  & a {
+    height: 220px;
+    display: block;
+    border: 3px solid #fff;
+  }
+  & h2 {
+    margin: var(--space-xs) 0;
+  }
+  & a,
+  & h2,
+  & p {
+    color: #fff;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 70%;
+    height: 3px;
+    bottom: 30px;
+    right: 60px;
+  }
+  &::before {
+    width: 40px;
+    bottom: 45px;
+    right: 56px;
+    transform: rotate(45deg);
+  }
+  &:hover {
+    background-color: rgb(112, 111, 111);
+  }
+}
+.sub-content {
+  border-top: 1px solid var(--color-accent);
+  .sub-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--color-base);
+  }
+  & li {
+    padding: var(--space-s);
+    border-bottom: 1px solid var(--color-line-right);
+  }
+  & h3 {
+    border-bottom: 1px solid var(--color-line-right);
+    text-align: center;
+    font-size: var(--title-h2);
+    padding: var(--space-xs);
+  }
+  & h4 {
+    font-size: var(--title-h3);
+    margin-bottom: var(--space-xxs);
+  }
+  .item {
+    padding: var(--space-xs);
+  }
+}
+/* -------------------------
+index.html
+-------------------------- */
+/* mainvisual */
+.mainvisual {
+  top: 70px;
+  margin: var(--space-xxs);
+  padding: var(--space-xxs);
+  border: 2px solid var(--color-accent);
+  position: relative;
+  height: 72vh;
+  margin-bottom: var(--space-s);
+  .image {
+    & img {
+      height: 70vh;
+    }
+  }
+  .catchphrase {
+    position: absolute;
+    padding: var(--space-xs);
+    bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 1px 6px #fff;
+    & span {
+      font-size: var(--text-xl);
+    }
+  }
+}
+/* main */
+.front-page {
+  /* border-top: 2px solid var(--color-accent); */
+  .section {
+    padding: var(--space-l) 0;
+    border-bottom: 3px solid var(--color-accent);
+  }
+  & img {
+    filter: grayscale(1);
+    width: 100%;
+    height: 200px;
+  }
+  .item-title {
+    font-size: var(--title-h2);
+    margin-bottom: var(--space-xs);
+  }
+  .item {
+    & p {
+      margin-bottom: 1rem;
+    }
+  }
+  /* section service ---------------*/
+  .service {
+    .item {
+      padding-bottom: var(--space-s);
+    }
+    .item-5 {
+      padding-bottom: var(--space-l);
+    }
+    .item-4 {
+      padding: 0;
+    }
+  }
+  /* section flow -------------------*/
+  .flow {
+    .item {
+      background-color: #fff;
+      padding: var(--space-xs);
+      margin-bottom: var(--space-s);
+      margin: var(--space-xs) var(--space-xxs);
+    }
+    .item-title {
+      border-bottom: 1px solid var(--color-accent);
+      padding-left: 60px;
+      position: relative;
+      line-height: 1.5;
+      & span {
+        background-color: var(--color-accent);
+        color: #fff;
+        font-size: var(--text-xs);
+        padding: 2px 4px;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+      }
+    }
+  }
+  .price {
+    margin-bottom: 0;
+    .section {
+      border-bottom: 3px solid var(--color-base);
+    }
+
+    & table {
+      width: 100%;
+      border: 1px solid var(--color-accent);
+      border-collapse: collapse;
+    }
+    & th {
+      background-color: rgb(172, 171, 171);
+    }
+    & td,
+    & th {
+      border-bottom: 1px solid var(--color-accent);
+      border-left: 1px solid var(--color-accent);
+      padding: var(--space-xxs);
+    }
+  }
+  .section.price {
+    border-bottom: none;
+  }
+}
+
+/* -----------------------
+detail.html
+------------------------ */
+.detail {
+  background-image: url(../img/detail-bg-fix.webp);
+  background-repeat: no-repeat;
+
+  .inner {
+    background-color: #ffffffb1;
+    padding: var(--space-s) var(--space-xs);
+    margin-bottom: var(--space-s);
+    & p {
+      margin-bottom: var(--space-xs);
+    }
+  }
+  .section-subtitle::before {
+    content: "■";
+  }
+  .section-title {
+    margin-bottom: var(--space-xxs);
+  }
+}
+
+/* -----------------------
+about.html
+------------------------ */
+#about {
+  .text {
+    padding: var(--space-s);
+    .item {
+      margin-bottom: var(--space-s);
+    }
+  }
+  .career dl {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .image {
+    text-align: center;
+    margin-bottom: var(--space-s);
+    & img {
+      width: 70%;
+    }
+  }
+  .summary {
+    border: 1px solid var(--color-line);
+    gap: 0;
+    grid-template-columns: 1fr 4fr;
+    & dt,
+    & dd {
+      border: 1px solid var(--color-line);
+      padding: var(--space-xxs);
+    }
+  }
+}
+
+/* -----------------------
+flow.html
+------------------------ */
+#flow {
+  .container {
+    border-left: 1px solid var(--color-accent);
+    padding: var(--space-l) 0 0 var(--space-m);
+  }
+  .section-title {
+    margin-bottom: var(--space-xs);
+    position: relative;
+  }
+  .section {
+    margin-bottom: var(--space-l);
+  }
+  .section-title::before {
+    content: "Step.1";
+    position: absolute;
+    color: rgba(143, 143, 143, 0.237);
+    font-size: 3rem;
+    top: -57px;
+    left: -33px;
+  }
+  .step2::before {
+    content: "Step.2";
+  }
+  .step3::before {
+    content: "Step.3";
+  }
+  .step4::before {
+    content: "Step.4";
+  }
+  .step5::before {
+    content: "Step.5";
+  }
+  .step6::before {
+    content: "Step.6";
+  }
+  .step7::before {
+    content: "Step.7";
+  }
+}
+
+/* -----------------------
+contact.html
+------------------------ */
+.contact-form {
+  .items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--space-xs);
+    .label {
+      margin-bottom: var(--space-xxs);
+    }
+    .required {
+      background-color: orangered;
+      color: #fff;
+      font-size: 0.7em;
+      padding: 1px 5px;
+      margin-left: 6px;
+    }
+    .item {
+      font-size: var(--text-l);
+      padding: 10px;
+    }
+  }
+  textarea {
+    height: 200px;
+    margin-bottom: var(--space-l);
+  }
+  .submit-button {
+    text-align: center;
+    margin-bottom: var(--space-l);
+    input {
+      background-color: orangered;
+      border: 1px solid orangered;
+      padding: 10px 20px;
+      color: #fff;
+      transition: 0.4s ease;
+      &:hover {
+        background-color: #fff;
+        color: orangered;
+      }
+    }
+  }
+}
+
+/* -----------------------
+thanks.html/404.html
+------------------------ */
+#thanks,
+#not-found {
+  .page-title {
+    padding: var(--space-m) 0;
+  }
+  & p {
+    margin-bottom: var(--space-s);
+  }
+}

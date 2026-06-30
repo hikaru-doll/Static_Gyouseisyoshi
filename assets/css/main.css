@@ -96,7 +96,6 @@ index.html
 }
 /* main */
 .front-page {
-  /* border-top: 2px solid var(--color-accent); */
   .section {
     padding: var(--space-l) 0;
     border-bottom: 3px solid var(--color-accent);

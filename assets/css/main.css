@@ -282,13 +282,14 @@ flow.html
 contact.html
 Formzuのフォームを挿入するため基本的にデザインは変更不可
 ------------------------ */
+/* intersection observer が発火しないように */
 .contact-form {
   height: 120vh;
 }
 /* -----------------------
 thanks.html/404.html
 ------------------------ */
-#thanks,
+.thanks-page,
 #not-found {
   .page-title {
     padding: var(--space-m) 0;

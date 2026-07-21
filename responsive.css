@@ -189,7 +189,7 @@
   /* -----------------------
   flow.html
   ------------------------ */
-  #flow {
+  .flow {
     .section-title::before {
       font-size: 6rem;
       top: -85px;

@@ -238,7 +238,7 @@ about.html
 /* -----------------------
 flow.html
 ------------------------ */
-#flow {
+.flow {
   .container {
     border-left: 1px solid var(--color-accent);
     padding: var(--space-l) 0 0 var(--space-m);
@@ -290,7 +290,8 @@ Formzuのフォームを挿入するため基本的にデザインは変更不�
 thanks.html/404.html
 ------------------------ */
 .thanks-page,
-#not-found {
+.not-found {
+  height: 120vh;
   .page-title {
     padding: var(--space-m) 0;
   }

@@ -14,14 +14,11 @@
   /* --space-xl: 64px; */
   --space-xl: clamp(0.5rem, -0.577rem + 5.38vw, 4rem);
   --space-xxl: 80px;
-
   /* === font size ======================== */
-
   --title-h1: clamp(1.563rem, 1.428rem + 0.67vw, 2rem);
   --title-h2: clamp(1.375rem, 1.26rem + 0.58vw, 1.5rem);
   --title-h3: clamp(1rem, 0.923rem + 0.38vw, 1.25rem);
   --title-h4: 1rem;
-
   /* == text ==============================*/
   --text-xs: 0.75rem;
   --text-s: clamp(0.875rem, 0.4vw + 0.8rem, 1rem);

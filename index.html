@@ -9,20 +9,24 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="responsive.css" />
     <title>ひか行政書士事務所</title>
-    <!-- 構造化データ start----------------------------------------->
-    <!-- /構造化データ end------------------------------------------>
-    <!-- Google Analyticsのタグを貼る場所 -------------------------->
+    <!-- 構造化データ ----------------------------------------->
+    <!-- Google Analyticsのタグを貼る場所 --------------------->
   </head>
   <body>
-    <!-- header-start ---------------------------------------------------------->
+    <!-- header------------------------------------->
     <header class="header flex">
       <h1 class="logo">ひか行政書士事務所</h1>
-      <div class="ham">
+      <button
+        class="ham"
+        aria-label="メニューを開く"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+      >
         <span class="ham1"></span>
         <span class="ham2"></span>
         <span class="ham3"></span>
-      </div>
-      <nav class="main-navigation">
+      </button>
+      <nav class="main-navigation" id="main-navigation">
         <ul class="nav-menu flex">
           <li><a href="#">トップページ</a></li>
           <li><a href="detail.html">業務内容</a></li>
@@ -34,7 +38,7 @@
         </ul>
       </nav>
     </header>
-    <!-- header-end ------------------------------------------------------------>
+    <!-- mainvisual ---------------------------------->
     <div class="mainvisual wrapper">
       <div class="image">
         <img src="assets/img/mainvisual_img.webp" alt="字を書いている人" />
@@ -49,9 +53,9 @@
       </p>
     </div>
 
-    <!-- main-start ------------------------------------------------------------>
+    <!-- main----------------------------------------------->
     <main class="main front-page">
-      <!-- section-service（業務内容）-start ------------->
+      <!-- service（業務内容）-------------->
       <section class="section service">
         <h2 class="title">業務内容</h2>
         <p class="section-phrase">
@@ -141,8 +145,7 @@
           </div>
         </div>
       </section>
-      <!-- section（業務内容）-end -------------------------->
-      <!-- section-flow（大まかな流れ）-start --------------->
+      <!-- flow（大まかな流れ）- --------------->
       <section class="section flow">
         <h2 class="title">申請までの大まかな流れ</h2>
         <p class="section-phrase">
@@ -182,12 +185,11 @@
             </p>
           </li>
         </ul>
-        <div class="button">
+        <div class="section-button button">
           <a href="flow.html">流れの詳細を見る</a>
         </div>
       </section>
-      <!-- section-（大まかな流れ）end ---------------------->
-      <!-- section-price（料金の目安）-start ---------------->
+      <!-- price（料金の目安）- ---------------->
       <section class="section price">
         <h2 class="title">料金の目安</h2>
         <p class="section-phrase">各申請の料金はこちらです。</p>
@@ -196,31 +198,29 @@
           <table>
             <thead>
               <tr>
-                <th scope="col">業務内容</th>
-                <th scope="col">着手金</th>
-                <th scope="col">成功報酬</th>
+                <th>業務内容</th>
+                <th>着手金</th>
+                <th>成功報酬</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">公的融資申請書作成</th>
+                <th>公的融資申請書作成</th>
                 <td>30,000円</td>
                 <td>融資金額の3%</td>
               </tr>
               <tr>
-                <th scope="row">ものづくり補助金申請書</th>
+                <th>ものづくり補助金申請書</th>
                 <td>30,000円</td>
                 <td>採択金額の10%</td>
               </tr>
               <tr>
-                <th scope="row">
-                  小規模事業者持続化補助金<br class="blank" />申請書
-                </th>
+                <th>小規模事業者持続化補助金<br class="blank" />申請書</th>
                 <td>30,000円</td>
                 <td>採択金額の10%</td>
               </tr>
               <tr>
-                <th scope="row">IT導入補助金申請書</th>
+                <th>IT導入補助金申請書</th>
                 <td>30,000円</td>
                 <td>採択金額の10%</td>
               </tr>
@@ -228,8 +228,7 @@
           </table>
         </div>
       </section>
-      <!-- section（料金の目安）-end ---------------------->
-      <!-- section contact（お問い合わせ）-start ---------->
+      <!-- contact（お問い合わせ）- ---------->
       <section class="contact">
         <a href="contact.html" class="wrapper">
           <h2>お問い合わせ</h2>
@@ -238,13 +237,10 @@
             ｢営業時間外でも依頼できるだろうか｣など、
             ふと気になる疑問がありましたら気兼ねなくご連絡ください。
           </p>
-          <div></div>
         </a>
       </section>
-      <!-- section（お問い合わせ）-end ------------------->
     </main>
-    <!-- main-end ------------------------------------------------------->
-    <!-- footer-start ----------------------------------------------------->
+    <!-- footer- --------------------------------------->
     <footer class="footer">
       <div class="wrapper">
         <div class="item">
@@ -253,14 +249,14 @@
             <dl class="grid">
               <dt>所在地:</dt>
               <dd>
-                〒000-0000<br />
-                兵庫県宝塚市〇〇町〇－〇 △△ビル3階
+                〒665-0000<br />
+                兵庫県宝塚市火香町0-0 火香火香ビル3階
               </dd>
               <dt>電話:</dt>
               <dd>090-0000-0000</dd>
               <dt>URL:</dt>
-              <dd>https://xxx.xxxx.com</dd>
-              <dt>業務時間:</dt>
+              <dd>https://hikarudoll.xsrv.jp/gyouseisyoshi</dd>
+              <dt>営業時間:</dt>
               <dd>午前9時30分～午後5時</dd>
               <dt>休日:</dt>
               <dd>木曜日</dd>
@@ -270,7 +266,7 @@
             </div>
           </div>
         </div>
-        <ul class="footer-nav-menu">
+        <ul class="footer-nav-menu" aria-label="フッターメニュー">
           <li><a href="index.html">トップ</a></li>
           <li><a href="detail.html">業務内容</a></li>
           <li><a href="flow.html">ご相談の流れ</a></li>
@@ -279,9 +275,9 @@
           <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
         </ul>
       </div>
-      <p class="copy">&copy;2024 ひか行政書士事務所</p>
+      <p class="copy">&copy;2026 ひか行政書士事務所</p>
     </footer>
-    <!-- /footer-end ------------------------------------------------->
+    <!-- /footer- ------------------------------------------------->
     <script src="java.js"></script>
   </body>
 </html>

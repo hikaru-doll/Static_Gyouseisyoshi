@@ -2,6 +2,9 @@
 @media screen and (max-width: 1120px) {
 }
 @media screen and (min-width: 878px) {
+  .blank {
+    display: block;
+  }
   .contact::after {
     width: 50%;
     right: 24%;

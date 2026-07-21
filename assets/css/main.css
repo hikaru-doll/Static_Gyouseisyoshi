@@ -2,6 +2,9 @@
 /* ---------------------
 共通スタイル
 -----------------------*/
+.blank {
+  display: none;
+}
 .contact {
   background-color: var(--color-accent);
   padding: var(--space-xxs);
@@ -202,7 +205,7 @@ detail.html
 /* -----------------------
 about.html
 ------------------------ */
-#about {
+.about {
   .text {
     padding: var(--space-s);
     .item {
@@ -277,48 +280,11 @@ flow.html
 
 /* -----------------------
 contact.html
+Formzuのフォームを挿入するため基本的にデザインは変更不可
 ------------------------ */
 .contact-form {
-  .items {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: var(--space-xs);
-    .label {
-      margin-bottom: var(--space-xxs);
-    }
-    .required {
-      background-color: orangered;
-      color: #fff;
-      font-size: 0.7em;
-      padding: 1px 5px;
-      margin-left: 6px;
-    }
-    .item {
-      font-size: var(--text-l);
-      padding: 10px;
-    }
-  }
-  textarea {
-    height: 200px;
-    margin-bottom: var(--space-l);
-  }
-  .submit-button {
-    text-align: center;
-    margin-bottom: var(--space-l);
-    input {
-      background-color: orangered;
-      border: 1px solid orangered;
-      padding: 10px 20px;
-      color: #fff;
-      transition: 0.4s ease;
-      &:hover {
-        background-color: #fff;
-        color: orangered;
-      }
-    }
-  }
+  height: 120vh;
 }
-
 /* -----------------------
 thanks.html/404.html
 ------------------------ */

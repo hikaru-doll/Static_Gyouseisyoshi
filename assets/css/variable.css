@@ -39,14 +39,4 @@
   --button-l: 1.25rem;
   --button-m: 1rem;
   --button-s: 0.875rem;
-
-  /* === line height ==================================== */
-  --line-height-s: 1.6;
-  --line-height-m: 1.8;
-  --line-height-l: 2.2;
-
-  /* === border radius ==================================== */
-  --radius-l: 20px;
-  --radius-m: 10px;
-  --radius-s: 4px;
 }

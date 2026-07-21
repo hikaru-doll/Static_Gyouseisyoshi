@@ -97,7 +97,7 @@ index.html
     }
   }
 }
-/* main */
+/* main --------------*/
 .front-page {
   .section {
     padding: var(--space-l) 0;
@@ -117,7 +117,7 @@ index.html
       margin-bottom: 1rem;
     }
   }
-  /* section service ---------------*/
+  /* service ---------------*/
   .service {
     .item {
       padding-bottom: var(--space-s);
@@ -129,7 +129,7 @@ index.html
       padding: 0;
     }
   }
-  /* section flow -------------------*/
+  /* flow -------------------*/
   .flow {
     .item {
       background-color: #fff;
@@ -153,6 +153,7 @@ index.html
       }
     }
   }
+  /* price --------------*/
   .price {
     margin-bottom: 0;
     .section {
@@ -163,6 +164,7 @@ index.html
       width: 100%;
       border: 1px solid var(--color-accent);
       border-collapse: collapse;
+      background-color: #fff;
     }
     & th {
       background-color: rgb(172, 171, 171);
@@ -185,7 +187,6 @@ detail.html
 .detail {
   background-image: url(../img/detail-bg-fix.webp);
   background-repeat: no-repeat;
-
   .inner {
     background-color: #ffffffb1;
     padding: var(--space-s) var(--space-xs);

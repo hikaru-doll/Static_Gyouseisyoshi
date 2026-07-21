@@ -192,6 +192,7 @@ footer
 /*  --------------------
 Intersection Observere
 -----------------------*/
+/* 発火したときの挙動 */
 .hide {
   transform: translateY(-200px);
 }

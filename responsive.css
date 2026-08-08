@@ -1,4 +1,14 @@
 @charset "utf-8";
+@media screen and (min-width: 600px) {
+  .about {
+    .grid {
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .image img {
+      width: 100%;
+    }
+  }
+}
 @media screen and (min-width: 878px) {
   .blank {
     display: block;

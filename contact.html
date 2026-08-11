@@ -46,12 +46,17 @@
     <!-- header- ----------------------------------------->
     <header class="header flex">
       <h1 class="logo">ひか行政書士事務所</h1>
-      <div class="ham">
+      <button
+        class="ham"
+        aria-label="メニューを開く"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+      >
         <span class="ham1"></span>
         <span class="ham2"></span>
         <span class="ham3"></span>
-      </div>
-      <nav class="main-navigation">
+      </button>
+      <nav class="main-navigation" id="main-navigation">
         <ul class="nav-menu flex">
           <li><a href="index.html">トップページ</a></li>
           <li><a href="detail.html">業務内容</a></li>

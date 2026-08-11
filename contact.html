@@ -10,12 +10,40 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="responsive.css" />
     <title>ひか行政書士事務所</title>
-    <!-- 構造化データ ----------------------------------------->
-    <!-- /構造化データ end------------------------------------------>
-    <!-- Google Analyticsのタグを貼る場所 -------------------------->
+    <!-- 構造化データ ------------------------------------>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ホーム",
+                "item": "https://hikarudoll.xsrv.jp/gyouseisyoshi/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "お問い合わせ",
+                "item": "https://hikarudoll.xsrv.jp/gyouseisyoshi/contact.html/"
+              }
+            ]
+          },
+          {
+            "@type": "ContactPage",
+            "name": "無料相談・お見積り・お問い合わせ",
+            "description": "ひか行政書士事務所へのお問い合わせ・ご相談予約はこちらからどうぞ。"
+          }
+        ]
+      }
+    </script>
+    <!-- Google Analyticsのタグを貼る場所 ---------------->
   </head>
   <body>
-    <!-- header- ---------------------------------------------------------->
+    <!-- header- ----------------------------------------->
     <header class="header flex">
       <h1 class="logo">ひか行政書士事務所</h1>
       <div class="ham">

@@ -188,6 +188,10 @@ footer
   .copy {
     text-align: center;
   }
+  .attention {
+    padding: var(--space-xxs);
+    font-size: var(--text-s);
+  }
 }
 /*  --------------------
 Intersection Observere
